@@ -112,7 +112,7 @@ nav a {
     }
     
     .nav-cta {
-        display: none;
+        display: none !important;
     }
     
     .nav-links {
