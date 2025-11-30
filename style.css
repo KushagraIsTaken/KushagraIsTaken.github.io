@@ -210,6 +210,20 @@ nav a {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+#announcement {
+    padding: 1rem 2rem;
+    background-color: #f4f4f4;
+}
+
+#announcement .news-item a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+#announcement .news-item a:hover {
+    text-decoration: underline;
+}
+
 footer {
     text-align: center;
     padding: 1rem 0;
