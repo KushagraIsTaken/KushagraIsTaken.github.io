@@ -133,6 +133,10 @@ nav a {
     .nav-cta {
         flex-wrap: wrap;
         gap: 0.5rem;
+        justify-content: center;
+        width: 100%;
+        order: 2;
+        margin-top: 0.5rem;
     }
     
     .btn {
@@ -163,9 +167,15 @@ nav a {
         margin-bottom: 1.5rem;
     }
     
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
     .hero-image img {
         width: 100%;
-        max-width: 300px;
+        max-width: 250px;
         height: auto;
     }
     
@@ -212,19 +222,24 @@ nav a {
     
     .nav-cta {
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 0.5rem;
     }
     
     .btn {
-        flex: 1;
+        flex: 0 1 auto;
         min-width: 0;
         text-align: center;
         font-size: 0.8rem;
-        padding: 8px 6px;
+        padding: 8px 12px;
     }
     
     .btn-outline {
-        flex: 1;
+        flex: 0 1 auto;
+    }
+    
+    .hero-image img {
+        max-width: 200px;
     }
     
     h1 {
