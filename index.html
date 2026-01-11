@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kushagra Agrawal - CV</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
-
 <body>
     <header>
         <nav class="navbar">
@@ -30,13 +23,12 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li class="nav-cta-mobile">
-                    <a class="btn-mobile" href="https://scholar.google.com/citations?user=hZgi4BgAAAAJ&hl=en"
-                        target="_blank" rel="noopener">
+                    <a class="btn-mobile" href="https://scholar.google.com/citations?user=hZgi4BgAAAAJ&hl=en" target="_blank" rel="noopener">
                         <i class="fa-solid fa-chart-line"></i> Google Scholar Metrics
                     </a>
                 </li>
                 <li class="nav-cta-mobile">
-                    <a class="btn-mobile" href="resume_kushagra.pdf" target="_blank" rel="noopener">
+                    <a class="btn-mobile" href="Resume_KA_10Oct.pdf" target="_blank" rel="noopener">
                         <i class="fa-solid fa-file-arrow-down"></i> Download CV
                     </a>
                 </li>
@@ -47,149 +39,106 @@
                 </li>
             </ul>
             <div class="nav-cta">
-                <a class="btn btn-icon" href="https://scholar.google.com/citations?user=hZgi4BgAAAAJ&hl=en"
-                    target="_blank" rel="noopener" aria-label="Google Scholar">
+                <a class="btn btn-icon" href="https://scholar.google.com/citations?user=hZgi4BgAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
                     <i class="fa-solid fa-chart-line"></i>
                     <span class="tooltip">View metrics on Google Scholar</span>
                 </a>
-                <a class="btn btn-outline" href="resume_kushagra.pdf" target="_blank" rel="noopener"><i
-                        class="fa-solid fa-file-arrow-down"></i> <span class="btn-text">Download CV</span></a>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
-                <a class="btn" href="https://calendly.com/kush4409" target="_blank" rel="noopener"><i
-                        class="fa-regular fa-calendar"></i> <span class="btn-text">Schedule</span></a>
+                <a class="btn btn-outline" href="Resume_KA_10Oct.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> <span class="btn-text">Download CV</span></a>
+                <a class="btn" href="https://calendly.com/kush4409" target="_blank" rel="noopener"><i class="fa-regular fa-calendar"></i> <span class="btn-text">Schedule</span></a>
             </div>
         </nav>
     </header>
-
-
+    <section id="announcement" class="container">
+        <div class="news-item news-feature">
+            <p>I am very happy and obliged to announce that I have just crossed <strong>100 citations</strong>! Check out my <a href="https://scholar.google.com/citations?user=hZgi4BgAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar profile</a> for more details.</p>
+        </div>
+    </section>
     <main>
-        <section id="hero" class="container animate-on-scroll">
+        <section id="hero" class="container">
             <div class="hero-text">
                 <h1>Kushagra Agrawal</h1>
                 <h2>Open to Research Internships, Masters, and PhD opportunities</h2>
                 <p><span class="availability">Actively looking for Research Intern, MS, PhD opportunities</span></p>
-                <p>Researcher focused on AI, ML, and data-centric systems for real-world impact in manufacturing, food
-                    systems, and multi-agent intelligence. I value clarity, reproducibility, and collaborative research.
-                </p>
+                <p>Researcher focused on AI, ML, and data-centric systems for real-world impact in manufacturing, food systems, and multi-agent intelligence. I value clarity, reproducibility, and collaborative research.</p>
                 <p class="contact-line"><strong>Phone:</strong> +91 87802 26117</p>
-                <p class="contact-line"><strong>Email:</strong> kush4409@gmail.com · 2205044@kiit.ac.in ·
-                    kushagra.agrawal@ieee.org</p>
-                <p class="collab">I am open for research collaboration, paper authorships, and industry partnerships.
-                </p>
+                <p class="contact-line"><strong>Email:</strong> kush4409@gmail.com · 2205044@kiit.ac.in · kushagra.agrawal@ieee.org</p>
+                <p class="collab">I am open for research collaboration, paper authorships, and industry partnerships.</p>
                 <p id="scholar-live" class="scholar-live" hidden>
                     Google Scholar citations: <span id="scholar-citations">—</span>
                 </p>
-
-                <!-- Citation Stats -->
-                <div class="citation-stats-banner animate-on-scroll">
-                    <div class="c-stat">
-                        <span class="c-stat-number" style="color: var(--primary-color);">135+</span>
-                        <span class="c-stat-label">Citations</span>
-                    </div>
-                    <div class="c-stat">
-                        <span class="c-stat-number">7</span>
-                        <span class="c-stat-label">h-index</span>
-                    </div>
-                    <div class="c-stat">
-                        <span class="c-stat-number">5</span>
-                        <span class="c-stat-label">i10-index</span>
-                    </div>
-                </div>
-                <div class="citation-date">
-                    * as of 11 Jan 2025
-                </div>
-
             </div>
             <div class="hero-image">
                 <img src="White.png" alt="Kushagra Agrawal">
             </div>
         </section>
-
-
-        <section id="socials" class="container animate-on-scroll">
+        <section id="news" class="container">
+            <h2>News</h2>
+            <article class="news-item news-feature">
+                <h3>Recent Acceptances</h3>
+                <ul>
+                    <li> Our Paper "Quantitative Evaluation of Hazard Mitigation Strategies in a 5-Stage RISC-V Pipeline" is going to RISC-V HPC Workshop at HiPC 2025, Hyderabad 2025 </li>
+                    <li>"Optimization of Latent-Space Compression using Game-Theoretic Techniques for Transformer-Based Vector Search" at ICDCIT - 2026, KIIT University</li>
+                    <li>"Trust-Aware Game-Theoretic Allocation for Secure and Efficient IoT-Edge Systems" accepted for Oral Prsentation at ICEdge - 2025, IISc Bangalore</li>
+                    <li>"Neural Orchestration for Multi-Agent Systems: A Deep Learning Framework for Optimal Agent Selection in Multi-Domain Task Environments" for Oral Prsentation at PReMI - 2025, IIT Delhi</li>
+                    <li>"From Chalkboards to Chatbots: Exploring Teacher and Student Readiness for Agentic AI in Indian Schools" accepted for Poster Presentation at ACM Compute - 2025, IIT Ropar</li>
+                </ul>
+            </article>
+        </section>
+        <section id="socials" class="container">
             <h2>Find me online</h2>
             <ul class="socials-list">
-                <li><a href="https://www.linkedin.com/in/kushagra-agrawal-51a3121ab/" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://scholar.google.com/citations?user=hZgi4BgAAAAJ&hl=en" target="_blank"
-                        rel="noopener"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a></li>
-                <li><a href="https://orcid.org/0009-0006-7753-175X" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-orcid"></i> ORCID</a></li>
-                <li><a href="http://arxiv.org/a/agrawal_k_1" target="_blank" rel="noopener"><i
-                            class="fa-solid fa-scroll"></i> arXiv</a></li>
-                <li><a href="https://www.researchgate.net/profile/Kushagra-Agrawal-20/research" target="_blank"
-                        rel="noopener"><i class="fa-brands fa-researchgate"></i> ResearchGate</a></li>
-                <li><a href="https://www.scopus.com/authid/detail.uri?authorId=58669364400" target="_blank"
-                        rel="noopener"><i class="fa-solid fa-database"></i> Scopus</a></li>
-                <li><a href="https://instagram.com/kushagra.btw" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/kushagra-agrawal-51a3121ab/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://scholar.google.com/citations?user=hZgi4BgAAAAJ&hl=en" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a></li>
+                <li><a href="https://orcid.org/0009-0006-7753-175X" target="_blank" rel="noopener"><i class="fa-brands fa-orcid"></i> ORCID</a></li>
+                <li><a href="http://arxiv.org/a/agrawal_k_1" target="_blank" rel="noopener"><i class="fa-solid fa-scroll"></i> arXiv</a></li>
+                <li><a href="https://www.researchgate.net/profile/Kushagra-Agrawal-20/research" target="_blank" rel="noopener"><i class="fa-brands fa-researchgate"></i> ResearchGate</a></li>
+                <li><a href="https://www.scopus.com/authid/detail.uri?authorId=58669364400" target="_blank" rel="noopener"><i class="fa-solid fa-database"></i> Scopus</a></li>
+                <li><a href="https://instagram.com/kushagra.btw" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
             </ul>
         </section>
-        <section id="timeline" class="container animate-on-scroll">
+        <section id="timeline" class="container">
             <h2>Work Experience</h2>
             <div class="timeline-list">
-                <div class="timeline-item">
-                    <div class="timeline-item-content">
-                        <h3>Taipei Medical University & National Tsing Hua University</h3>
-                        <p>Research Intern | July 2025 - August 2025</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-item-content">
-                        <h3>MIDAS Lab, IIIT Delhi</h3>
-                        <p>Research Intern | May 2025 - July 2025</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-item-content">
-                        <h3>Defence Research & Development Organization - DYSL-AI</h3>
-                        <p>Research Intern | May 2025 - June 2025</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-item-content">
-                        <h3>Indian Statistical Institute</h3>
-                        <p>Data Science Intern | Jul 2024 - Oct 2024</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-item-content">
-                        <h3>IEEE Silchar Subsection</h3>
-                        <p>Research Intern | Jul 2024 - Aug 2024</p>
-                    </div>
-                </div>
+            <div class="timeline-item">
+                <h3>Taipei Medical University & National Tsing Hua University</h3>
+                <p>Research Intern | July 2025 - August 2025</p>
+            </div>
+            <div class="timeline-item">
+                <h3>MIDAS Lab, IIIT Delhi</h3>
+                <p>Research Intern | May 2025 - July 2025</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Defence Research & Development Organization - DYSL-AI</h3>
+                <p>Research Intern | May 2025 - June 2025</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Indian Statistical Institute</h3>
+                <p>Data Science Intern | Jul 2024 - Oct 2024</p>
+            </div>
+            <div class="timeline-item">
+                <h3>IEEE Silchar Subsection</h3>
+                <p>Research Intern | Jul 2024 - Aug 2024</p>
+            </div>
             </div>
         </section>
-
-        <section id="projects" class="container animate-on-scroll">
-            <h2>Selected Projects</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <div>
-                        <h3>Personalized AI Nutrition Chatbot</h3>
-                        <p>Oct 2024 - Dec 2024</p>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div>
-                        <h3>Predictive Maintenance Analytics</h3>
-                        <p>Jul 2024 - Oct 2024</p>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div>
-                        <h3>Fine Tuning LLMs on CPU – Intel Unnati Industrial Training Program</h3>
-                        <p>Apr 2024 - Aug 2024</p>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div>
-                        <h3>Medicinal Leaf Detection Model - Smart India Hackathon 2023</h3>
-                        <p>May 2023 - Sept 2023</p>
-                    </div>
-                </div>
+        
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Personalized AI Nutrition Chatbot</h3>
+                <p>Oct 2024 - Dec 2024</p>
+            </div>
+            <div class="project-item">
+                <h3>Predictive Maintenance Analytics</h3>
+                <p>Jul 2024 - Oct 2024</p>
+            </div>
+            <div class="project-item">
+                <h3>Fine Tuning LLMs on CPU – Intel Unnati Industrial Training Program</h3>
+                <p>Apr 2024 - Aug 2024</p>
+            </div>
+            <div class="project-item">
+                <h3>Medicinal Leaf Detection Model - Smart India Hackathon 2023</h3>
+                <p>May 2023 - Sept 2023</p>
             </div>
         </section>
         <section id="selected-publications" class="container">
@@ -207,5 +156,4 @@
     <script src="script.js"></script>
     <script src="home.js"></script>
 </body>
-
 </html>

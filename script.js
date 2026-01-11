@@ -194,12 +194,12 @@ if (publicationsContainer && Array.isArray(window.publications)) {
 }
 
 // Mobile menu toggle
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navLinks = document.querySelector('.nav-links');
-
+    
     if (mobileMenuToggle && navLinks) {
-        mobileMenuToggle.addEventListener('click', function () {
+        mobileMenuToggle.addEventListener('click', function() {
             navLinks.classList.toggle('active');
             const icon = this.querySelector('i');
             if (icon) {
@@ -212,11 +212,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         });
-
+        
         // Close menu when clicking on a link
         const navLinkItems = navLinks.querySelectorAll('a');
         navLinkItems.forEach(link => {
-            link.addEventListener('click', function () {
+            link.addEventListener('click', function() {
                 navLinks.classList.remove('active');
                 const icon = mobileMenuToggle.querySelector('i');
                 if (icon) {
@@ -226,51 +226,4 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
-});
-
-// Dark Mode & Animations
-document.addEventListener('DOMContentLoaded', function () {
-    // Theme Toggle
-    const themeToggle = document.getElementById('theme-toggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-
-    // Check saved theme or system preference
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark.matches)) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        if (themeToggle) themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
-    }
-
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-
-            themeToggle.innerHTML = newTheme === 'dark'
-                ? '<i class="fa-solid fa-sun"></i>'
-                : '<i class="fa-solid fa-moon"></i>';
-        });
-    }
-
-    // Scroll Animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Only animate once
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.animate-on-scroll').forEach(el => {
-        observer.observe(el);
-    });
 });
