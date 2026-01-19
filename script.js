@@ -1,14 +1,5 @@
 window.publications = [
     {
-        title: 'IndiSegNet: Real-time semantic segmentation for unstructured road scenes in intelligent transportation systems',
-        authors: 'Pritam Chakraborty, Anjan Bandopadhyay, Kushagra Agrawal, Jin Zhang, and Man-Fai Leung',
-        year: '2026',
-        journal: 'Intelligent Systems with Applications',
-        publisher: 'Elsevier',
-        url: 'https://www.sciencedirect.com/science/article/pii/S2667305326000049',
-        note: 'IF: 4.3, CiteScore: 8.3'
-    },
-    {
         title: 'Artificial Intelligence in Personalized Nutrition and Food Manufacturing: A Comprehensive Review of Methods, Applications, and Future Directions',
         authors: 'Kushagra Agrawal, Polat Goktas, Navneet Kumar, and Man-Fai Leung',
         year: '2025',
@@ -18,7 +9,14 @@ window.publications = [
         publisher: 'Frontiers',
         url: 'https://www.frontiersin.org/articles/10.3389/fnut.2025.1636980'
     },
-
+    {
+        title: 'Neural Orchestration for Multi-Agent Systems: A Deep Learning Framework for Optimal Agent Selection in Multi-Domain Task Environments',
+        authors: 'Kushagra Agrawal and Nisharg Nargund',
+        year: '2025',
+        journal: 'arXiv preprint',
+        number: 'arXiv:2505.02861',
+        url: 'https://arxiv.org/abs/2505.02861'
+    },
     {
         title: 'Deep learning in industry 4.0: Transforming manufacturing through data-driven innovation',
         authors: 'Kushagra Agrawal and Nisharg Nargund',
@@ -83,7 +81,14 @@ window.publications = [
         pages: '302--310',
         url: 'https://arxiv.org/abs/2505.02861'
     },
-
+    {
+        title: 'Neural Orchestration for Multi-Agent Systems: A Deep Learning Framework for Optimal Agent Selection in Multi-Domain Task Environments',
+        authors: 'Kushagra Agrawal and Nisharg Nargund',
+        year: '2025',
+        journal: 'arXiv preprint',
+        number: 'arXiv:2505.02861',
+        url: ''
+    },
     {
         title: 'Machine Vision and Deep Learning in Meat Processing: Enhancing Precision, Safety, Efficiency, and Sustainability—A Comprehensive Survey',
         authors: 'Kushagra Agrawal, Cyrine Abid, Navneet Kumar, and Polat Goktas',
@@ -127,7 +132,13 @@ window.publications = [
         number: 'arXiv:2508.14830',
         url: 'https://arxiv.org/abs/2508.18877'
     },
-
+    {
+        title: 'Optimization of Latent-Space Compression using Game-Theoretic Techniques for Transformer-Based Vector Search',
+        authors: 'Kushagra Agrawal, Nisharg Nargund, and Oishani Banerjee',
+        year: '2025',
+        journal: 'arXiv preprint',
+        number: 'arXiv:2508.18877'
+    },
     {
         title: 'From detection to decision: Applied AI and ML techniques in food quality monitoring and process optimization',
         authors: 'Kushagra Agrawal, Polat Goktas, and Navneet Kumar',
@@ -215,4 +226,51 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
+});
+
+// Dark Mode & Animations
+document.addEventListener('DOMContentLoaded', function () {
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    // Check saved theme or system preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark.matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        if (themeToggle) themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+
+            themeToggle.innerHTML = newTheme === 'dark'
+                ? '<i class="fa-solid fa-sun"></i>'
+                : '<i class="fa-solid fa-moon"></i>';
+        });
+    }
+
+    // Scroll Animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        observer.observe(el);
+    });
 });
