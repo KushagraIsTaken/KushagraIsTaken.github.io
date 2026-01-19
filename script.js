@@ -1,5 +1,14 @@
 window.publications = [
     {
+        title: 'IndiSegNet: Real-time semantic segmentation for unstructured road scenes in intelligent transportation systems',
+        authors: 'Pritam Chakraborty, Anjan Bandopadhyay, Kushagra Agrawal, Jin Zhang, and Man-Fai Leung',
+        year: '2026',
+        journal: 'Intelligent Systems with Applications',
+        publisher: 'Elsevier',
+        url: 'https://www.sciencedirect.com/science/article/pii/S2667305326000049',
+        note: 'IF: 4.3, CiteScore: 8.3'
+    },
+    {
         title: 'Artificial Intelligence in Personalized Nutrition and Food Manufacturing: A Comprehensive Review of Methods, Applications, and Future Directions',
         authors: 'Kushagra Agrawal, Polat Goktas, Navneet Kumar, and Man-Fai Leung',
         year: '2025',
@@ -9,14 +18,7 @@ window.publications = [
         publisher: 'Frontiers',
         url: 'https://www.frontiersin.org/articles/10.3389/fnut.2025.1636980'
     },
-    {
-        title: 'Neural Orchestration for Multi-Agent Systems: A Deep Learning Framework for Optimal Agent Selection in Multi-Domain Task Environments',
-        authors: 'Kushagra Agrawal and Nisharg Nargund',
-        year: '2025',
-        journal: 'arXiv preprint',
-        number: 'arXiv:2505.02861',
-        url: 'https://arxiv.org/abs/2505.02861'
-    },
+
     {
         title: 'Deep learning in industry 4.0: Transforming manufacturing through data-driven innovation',
         authors: 'Kushagra Agrawal and Nisharg Nargund',
@@ -81,14 +83,7 @@ window.publications = [
         pages: '302--310',
         url: 'https://arxiv.org/abs/2505.02861'
     },
-    {
-        title: 'Neural Orchestration for Multi-Agent Systems: A Deep Learning Framework for Optimal Agent Selection in Multi-Domain Task Environments',
-        authors: 'Kushagra Agrawal and Nisharg Nargund',
-        year: '2025',
-        journal: 'arXiv preprint',
-        number: 'arXiv:2505.02861',
-        url: ''
-    },
+
     {
         title: 'Machine Vision and Deep Learning in Meat Processing: Enhancing Precision, Safety, Efficiency, and Sustainability—A Comprehensive Survey',
         authors: 'Kushagra Agrawal, Cyrine Abid, Navneet Kumar, and Polat Goktas',
@@ -132,13 +127,7 @@ window.publications = [
         number: 'arXiv:2508.14830',
         url: 'https://arxiv.org/abs/2508.18877'
     },
-    {
-        title: 'Optimization of Latent-Space Compression using Game-Theoretic Techniques for Transformer-Based Vector Search',
-        authors: 'Kushagra Agrawal, Nisharg Nargund, and Oishani Banerjee',
-        year: '2025',
-        journal: 'arXiv preprint',
-        number: 'arXiv:2508.18877'
-    },
+
     {
         title: 'From detection to decision: Applied AI and ML techniques in food quality monitoring and process optimization',
         authors: 'Kushagra Agrawal, Polat Goktas, and Navneet Kumar',
@@ -194,12 +183,12 @@ if (publicationsContainer && Array.isArray(window.publications)) {
 }
 
 // Mobile menu toggle
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navLinks = document.querySelector('.nav-links');
-    
+
     if (mobileMenuToggle && navLinks) {
-        mobileMenuToggle.addEventListener('click', function() {
+        mobileMenuToggle.addEventListener('click', function () {
             navLinks.classList.toggle('active');
             const icon = this.querySelector('i');
             if (icon) {
@@ -212,11 +201,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
-        
+
         // Close menu when clicking on a link
         const navLinkItems = navLinks.querySelectorAll('a');
         navLinkItems.forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function () {
                 navLinks.classList.remove('active');
                 const icon = mobileMenuToggle.querySelector('i');
                 if (icon) {
