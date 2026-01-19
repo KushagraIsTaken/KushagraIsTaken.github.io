@@ -1,5 +1,14 @@
 window.publications = [
     {
+        title: 'IndiSegNet: Real-time semantic segmentation for unstructured road scenes in intelligent transportation systems',
+        authors: 'Pritam Chakraborty, Anjan Bandopadhyay, Kushagra Agrawal, Jin Zhang, and Man-Fai Leung',
+        year: '2026',
+        journal: 'Intelligent Systems with Applications',
+        pages: '200629',
+        doi: '10.1016/j.iswa.2026.200629',
+        url: 'https://www.sciencedirect.com/science/article/pii/S2667305326000049'
+    },
+    {
         title: 'Artificial Intelligence in Personalized Nutrition and Food Manufacturing: A Comprehensive Review of Methods, Applications, and Future Directions',
         authors: 'Kushagra Agrawal, Polat Goktas, Navneet Kumar, and Man-Fai Leung',
         year: '2025',

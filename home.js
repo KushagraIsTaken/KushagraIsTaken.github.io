@@ -79,7 +79,7 @@
 				el.hidden = false;
 			}
 		})
-		.catch(() => {});
+		.catch(() => { });
 })();
 
 // Selected publications (top N) injected on the homepage
@@ -89,6 +89,7 @@
 
 	// Ensure specific featured papers appear first
 	const featuredTitles = new Set([
+		'IndiSegNet: Real-time semantic segmentation for unstructured road scenes in intelligent transportation systems',
 		'Artificial Intelligence in Personalized Nutrition and Food Manufacturing: A Comprehensive Review of Methods, Applications, and Future Directions',
 		'AI-Driven Transformation in Food Manufacturing: A Pathway to Sustainable Efficiency and Quality Assurance',
 		'Neural Orchestration for Multi-Agent Systems: A Deep Learning Framework for Optimal Agent Selection in Multi-Domain Task Environments'
