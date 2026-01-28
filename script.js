@@ -282,4 +282,49 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.animate-on-scroll').forEach(el => {
         observer.observe(el);
     });
+
+    // Republic Day Modal Logic
+    const modal = document.getElementById('republic-modal');
+    const btn = document.getElementById('republic-day-trigger');
+    const span = document.getElementsByClassName('close-modal')[0];
+
+    if (btn && modal) {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.style.display = 'block';
+            // Force reflow
+            void modal.offsetWidth;
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        });
+    }
+
+    // Function to close modal
+    const closeModal = () => {
+        if (!modal) return;
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }, 300);
+    };
+
+    if (span) {
+        span.addEventListener('click', closeModal);
+    }
+
+    if (modal) {
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && modal.classList.contains('show')) {
+                closeModal();
+            }
+        });
+    }
 });
