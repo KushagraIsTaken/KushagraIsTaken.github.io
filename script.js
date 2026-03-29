@@ -142,11 +142,12 @@ window.publications = [
         url: 'https://arxiv.org/abs/2508.18877'
     },
     {
-        title: 'Optimization of Latent-Space Compression using Game-Theoretic Techniques for Transformer-Based Vector Search',
+        title: 'Optimization of Latent-Space Compression Using Game-Theoretic Techniques for Transformer-Based Vector Search',
         authors: 'Kushagra Agrawal, Nisharg Nargund, and Oishani Banerjee',
-        year: '2025',
-        journal: 'arXiv preprint',
-        number: 'arXiv:2508.18877'
+        year: '2026',
+        journal: 'Distributed Computing and Intelligent Technology',
+        publisher: 'Springer',
+        url: 'https://doi.org/10.1007/978-3-032-16632-6_24'
     },
     {
         title: 'From detection to decision: Applied AI and ML techniques in food quality monitoring and process optimization',
@@ -156,6 +157,22 @@ window.publications = [
         pages: '555--570',
         publisher: 'Elsevier',
         url: ''
+    },
+    {
+        title: 'AWRAF: An Energy-Aware Adaptive Weight-Based Resource Allocation Framework for IoT with THz Links and Intelligent Surfaces',
+        authors: 'Kushagra Agrawal, Ferheen Ayaz, and Polat Goktas',
+        year: '2026',
+        journal: 'IEEE World Congress on Computational Intelligence (WCCI)',
+        url: 'https://lnkd.in/dCUdAAbi'
+    },
+    {
+        title: 'Trust-Aware Game-Theoretic Allocation for Secure and Efficient IoT-Edge Systems',
+        authors: 'Kushagra Agrawal, Oishani Banarjee, and Polat Goktas',
+        year: '2025',
+        journal: '2025 First International Conference on Intelligent Computing and Systems at the Edge (ICEdge)',
+        pages: '1--7',
+        publisher: 'IEEE',
+        url: 'https://doi.org/10.1109/ICEdge67252.2025.11412888'
     }
 ];
 
