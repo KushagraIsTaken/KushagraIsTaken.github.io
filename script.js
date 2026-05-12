@@ -1,5 +1,15 @@
 window.publications = [
     {
+        title: 'Behavioural Analytics: Machine Learning Approaches for Predictive Insights',
+        authors: 'Kushagra Agrawal*, Pracheeta Gupta, Kshitij Krishna, Seba Mohanty and Sugyanta Priyadarshini',
+        year: '2026',
+        journal: 'Behavioural Analytics and Natural Language Processing for Data-Driven Business Insights',
+        pages: '95--116',
+        publisher: 'Bentham Science Publishers',
+        doi: '10.2174/9798898813932126030011',
+        url: 'https://doi.org/10.2174/9798898813932126030011'
+    },
+    {
         title: 'IndiSegNet: Real-time semantic segmentation for unstructured road scenes in intelligent transportation systems',
         authors: 'Pritam Chakraborty, Anjan Bandopadhyay, Kushagra Agrawal, Jin Zhang, and Man-Fai Leung',
         year: '2026',
@@ -341,6 +351,50 @@ document.addEventListener('DOMContentLoaded', function () {
         document.addEventListener('keydown', (event) => {
             if (event.key === 'Escape' && modal.classList.contains('show')) {
                 closeModal();
+            }
+        });
+    }
+
+    // Graduation Modal Logic
+    const gradModal = document.getElementById('graduation-modal');
+    const gradBtns = document.querySelectorAll('.graduation-trigger');
+    const gradSpan = gradModal ? gradModal.querySelector('.close-modal') : null;
+
+    if (gradBtns.length > 0 && gradModal) {
+        gradBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                gradModal.style.display = 'block';
+                void gradModal.offsetWidth;
+                gradModal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+    }
+
+    const closeGradModal = () => {
+        if (!gradModal) return;
+        gradModal.classList.remove('show');
+        setTimeout(() => {
+            gradModal.style.display = 'none';
+            document.body.style.overflow = '';
+        }, 300);
+    };
+
+    if (gradSpan) {
+        gradSpan.addEventListener('click', closeGradModal);
+    }
+
+    if (gradModal) {
+        window.addEventListener('click', (event) => {
+            if (event.target === gradModal) {
+                closeGradModal();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && gradModal.classList.contains('show')) {
+                closeGradModal();
             }
         });
     }
