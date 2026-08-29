@@ -32,6 +32,7 @@
 
 	const institutions = [
 		{ name: 'KIIT University', coords: [20.3551, 85.8193], type: 'edu' },
+		{ name: 'Åbo Akademi University', coords: [60.4510, 22.2776], type: 'edu' },
 		{ name: 'IIIT-Delhi (MIDAS Lab)', coords: [28.5450, 77.2732], type: 'work' },
 		{ name: 'Indian Statistical Institute, Kolkata', coords: [22.6492, 88.3726], type: 'work' },
 		{ name: 'DRDO DYSL-AI, Bengaluru', coords: [12.9716, 77.5946], type: 'work' },

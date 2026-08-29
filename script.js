@@ -398,4 +398,48 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    // Applications Modal Logic
+    const appModal = document.getElementById('applications-modal');
+    const appBtns = document.querySelectorAll('.applications-trigger');
+    const appSpan = appModal ? appModal.querySelector('.close-modal') : null;
+
+    if (appBtns.length > 0 && appModal) {
+        appBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                appModal.style.display = 'block';
+                void appModal.offsetWidth;
+                appModal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+    }
+
+    const closeAppModal = () => {
+        if (!appModal) return;
+        appModal.classList.remove('show');
+        setTimeout(() => {
+            appModal.style.display = 'none';
+            document.body.style.overflow = '';
+        }, 300);
+    };
+
+    if (appSpan) {
+        appSpan.addEventListener('click', closeAppModal);
+    }
+
+    if (appModal) {
+        window.addEventListener('click', (event) => {
+            if (event.target === appModal) {
+                closeAppModal();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && appModal.classList.contains('show')) {
+                closeAppModal();
+            }
+        });
+    }
 });
