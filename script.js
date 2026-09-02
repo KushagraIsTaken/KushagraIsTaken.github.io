@@ -513,4 +513,48 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    // ELLIS Summer School Modal Logic
+    const ellisModal = document.getElementById('ellis-modal');
+    const ellisBtns = document.querySelectorAll('.ellis-trigger');
+    const ellisSpan = ellisModal ? ellisModal.querySelector('.close-modal') : null;
+
+    if (ellisBtns.length > 0 && ellisModal) {
+        ellisBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                ellisModal.style.display = 'block';
+                void ellisModal.offsetWidth;
+                ellisModal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+    }
+
+    const closeEllisModal = () => {
+        if (!ellisModal) return;
+        ellisModal.classList.remove('show');
+        setTimeout(() => {
+            ellisModal.style.display = 'none';
+            document.body.style.overflow = '';
+        }, 300);
+    };
+
+    if (ellisSpan) {
+        ellisSpan.addEventListener('click', closeEllisModal);
+    }
+
+    if (ellisModal) {
+        window.addEventListener('click', (event) => {
+            if (event.target === ellisModal) {
+                closeEllisModal();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && ellisModal.classList.contains('show')) {
+                closeEllisModal();
+            }
+        });
+    }
 });

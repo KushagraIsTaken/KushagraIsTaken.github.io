@@ -435,11 +435,14 @@ header {
 
 /* Sections General */
 section {
-    padding: 3rem 0;
+    padding: 3.5rem 0;
+    margin-top: 1.5rem;
 }
 
 section h2 {
     text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* Timeline Section - Wrapping (Snake-like) Layout */
@@ -548,6 +551,50 @@ section h2 {
 .news-feature {
     border-left: 4px solid var(--success-color);
     margin-bottom: 0.5rem;
+}
+
+/* Summer School & Cambridge Highlight Styling */
+.cambridge-highlight {
+    border-left: 4px solid #7c3aed !important;
+    background: linear-gradient(135deg, var(--surface-color) 0%, rgba(124, 58, 237, 0.07) 100%) !important;
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.15) !important;
+    position: relative;
+}
+
+[data-theme="dark"] .cambridge-highlight {
+    background: linear-gradient(135deg, var(--surface-color) 0%, rgba(168, 85, 247, 0.14) 100%) !important;
+    box-shadow: 0 4px 22px rgba(168, 85, 247, 0.28) !important;
+}
+
+.cambridge-text {
+    color: #7c3aed;
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-color: rgba(124, 58, 237, 0.4);
+    text-underline-offset: 3px;
+}
+
+[data-theme="dark"] .cambridge-text {
+    color: #c084fc;
+    text-decoration-color: rgba(192, 132, 252, 0.5);
+}
+
+.summer-school-org {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+    margin-bottom: 0.35rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.4rem;
+}
+
+.summer-school-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
 }
 
 /* Skills Section */
