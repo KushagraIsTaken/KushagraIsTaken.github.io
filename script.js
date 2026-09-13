@@ -1,5 +1,13 @@
 window.publications = [
     {
+        title: 'Translating the Translator: Decomposing the Cost of English-Forced Inter-Agent Communication',
+        authors: 'Kushagra Agrawal, Yuming Feng, and Man-Fai Leung',
+        year: '2026',
+        journal: 'REALM: The 2nd Workshop for Research on Agent Language Models (EMNLP 2026)',
+        publisher: 'ACL Anthology',
+        url: '#'
+    },
+    {
         title: 'Artificial intelligence in food and nutrition science: a paradigm-centric review of computational frameworks and system-level integration',
         authors: 'Kushagra Agrawal, Navneet Kumar, Anurag Singh, Chungui Lu, and Man-Fai Leung',
         year: '2026',
@@ -12,7 +20,7 @@ window.publications = [
         title: 'The Token Tax: Measuring the Diminishing Returns of Test-Time Compute in Agentic Pipelines',
         authors: 'Kushagra Agrawal, Christian Beecks, and Man-Fai Leung',
         year: '2026',
-        journal: 'Second Workshop on Agents in the Wild: Safety, Security, and Beyond',
+        journal: 'Second Workshop on Agents in the Wild: Safety, Security, and Beyond (AI-Wild @ ICML 2026)',
         url: 'https://lnkd.in/dCUdAAbi'
     },
     {
