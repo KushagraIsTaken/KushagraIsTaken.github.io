@@ -754,7 +754,8 @@ section h2 {
     border-left-color: #ca8a04;
 }
 
-.selected-publication a {
+.selected-publication a,
+.selected-publication .pub-title {
     font-weight: 700;
     font-size: 1.15rem;
     display: block;
