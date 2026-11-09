@@ -1,0 +1,194 @@
+{
+  "source": "https://scholar.google.com/citations?user=hZgi4BgAAAAJ",
+  "updated": "2026-11-09T17:48:15Z",
+  "citations": 474,
+  "h_index": 9,
+  "i10_index": 9,
+  "recent": {
+    "label": "Since 2021",
+    "citations": 473,
+    "h_index": 9,
+    "i10_index": 9
+  },
+  "history": [
+    {
+      "year": 2024,
+      "citations": 13
+    },
+    {
+      "year": 2025,
+      "citations": 130
+    },
+    {
+      "year": 2026,
+      "citations": 312
+    }
+  ],
+  "papers": [
+    {
+      "title": "Artificial Intelligence in Personalized Nutrition and Food Manufacturing: A Comprehensive Review of Methods, Applications, and Future Directions",
+      "citations": 176,
+      "year": 2025
+    },
+    {
+      "title": "AI-Driven Transformation in Food Manufacturing: A Pathway to Sustainable Efficiency and Quality Assurance",
+      "citations": 134,
+      "year": 2025
+    },
+    {
+      "title": "Deep learning in industry 4.0: transforming manufacturing through data-driven innovation",
+      "citations": 50,
+      "year": 2024
+    },
+    {
+      "title": "Advancements in tool wear monitoring in turning operations: digital image processing and AI techniques",
+      "citations": 18,
+      "year": 2024
+    },
+    {
+      "title": "Artificial Intelligence Innovations: Inception of new horizons in food processing sector",
+      "citations": 15,
+      "year": 2023
+    },
+    {
+      "title": "AI-ML applications in agriculture and food processing",
+      "citations": 14,
+      "year": 2025
+    },
+    {
+      "title": "IoT-based service allocation in edge computing using game theory",
+      "citations": 14,
+      "year": 2024
+    },
+    {
+      "title": "Neural orchestration for multi-agent systems: A deep learning framework for optimal agent selection in multi-domain task environments",
+      "citations": 11,
+      "year": 2025
+    },
+    {
+      "title": "Machine Vision and Deep Learning in Meat Processing: Enhancing Precision, Safety, Efficiency, and Sustainability—A Comprehensive Survey",
+      "citations": 11,
+      "year": 2025
+    },
+    {
+      "title": "How Large Language Models Transform Urban Planning and Shape Tomorrow's Cities",
+      "citations": 9,
+      "year": 2025
+    },
+    {
+      "title": "Artificial intelligence in food and nutrition science: a paradigm-centric review of computational frameworks and system-level integration",
+      "citations": 5,
+      "year": 2026
+    },
+    {
+      "title": "From detection to decision: applied AI and ML techniques in food quality monitoring and process optimization",
+      "citations": 3,
+      "year": 2026
+    },
+    {
+      "title": "IndiSegNet: Real-time semantic segmentation for unstructured road scenes in intelligent transportation systems",
+      "citations": 2,
+      "year": 2026
+    },
+    {
+      "title": "Computer Vision in Agriculture: Object Detection, Recognition, and Image Segmentation Techniques and Advanced Image Analysis",
+      "citations": 2,
+      "year": 2025
+    },
+    {
+      "title": "Artificial Intelligence and Machine Learning in Agriculture: Novel Techniques, Implementation Strategies, and Application",
+      "citations": 2,
+      "year": 2025
+    },
+    {
+      "title": "Translating the Translator: Decomposing the Cost of English-Forced Inter-Agent Communication",
+      "citations": 1,
+      "year": 2026
+    },
+    {
+      "title": "Quantitative Evaluation of Hazard Mitigation Strategies in a 5-Stage RISC-V Pipeline: A Benchmark-Driven Analysis Using Fibonacci and Prime Sieve",
+      "citations": 1,
+      "year": 2026
+    },
+    {
+      "title": "Optimization of Latent-Space Compression Using Game-Theoretic Techniques for Transformer-Based Vector Search",
+      "citations": 1,
+      "year": 2026
+    },
+    {
+      "title": "The Token Tax: Measuring the Diminishing Returns of Test-Time Compute in Agentic Pipelines",
+      "citations": 1,
+      "year": 2026
+    },
+    {
+      "title": "AI-driven demand forecasting in industry 4.0: Techniques, applications, and future trends",
+      "citations": 1,
+      "year": 2026
+    },
+    {
+      "title": "Novel agricultural techniques: an artificial intelligence and machine learning approach",
+      "citations": 1,
+      "year": 2026
+    },
+    {
+      "title": "AI/ML Techniques for Enhancing IoT‐based Communication",
+      "citations": 1,
+      "year": 2025
+    },
+    {
+      "title": "MOHAF: A multi-objective hierarchical auction framework for scalable and fair resource allocation in IoT ecosystems",
+      "citations": 1,
+      "year": 2025
+    },
+    {
+      "title": "AI-enabled multi-omics integration for predictive food safety",
+      "citations": 0,
+      "year": 2026
+    },
+    {
+      "title": "Structured Hallucinations in Small Language Models: Repeatability, Attention Signatures, and Context Contagion",
+      "citations": 0,
+      "year": 2026
+    },
+    {
+      "title": "AWRAF: An Energy-Aware Adaptive Weight-Based Resource Allocation Framework for IoT with THz Links and Intelligent Surfaces",
+      "citations": 0,
+      "year": 2026
+    },
+    {
+      "title": "Behavioural Analytics and Natural Language Processing for Data-Driven Business Insights",
+      "citations": 0,
+      "year": 2026
+    },
+    {
+      "title": "Trust-aware game-theoretic allocation for secure and efficient IoT-edge systems",
+      "citations": 0,
+      "year": 2025
+    },
+    {
+      "title": "Enhancing Drying Kinetics Prediction: A Comparative Analysis of Random Forest and Linear Regression Models for Carrot Pomace",
+      "citations": 0,
+      "year": 2025
+    },
+    {
+      "title": "Methodological Framework for Equity-Focused Nutrition Recommendation System",
+      "citations": 0,
+      "year": 2025
+    },
+    {
+      "title": "Optimizing Resource Allocation in Quantum Networks Through Game Theory",
+      "citations": 0,
+      "year": 2024
+    },
+    {
+      "title": "Advancements in Computer Vision and Machine Learning for Food Quality Evaluation: A Comprehensive Review for the Food Industry",
+      "citations": 0,
+      "year": 2023
+    },
+    {
+      "title": "Dynamic Linkage between Crude Oil Price, Energy Uncertainty and Gold Price Volatility in Five Leading Oil and Gold Consuming Nations: Insights from Ardl and Machine Learning …",
+      "citations": 0,
+      "year": null
+    }
+  ]
+}

@@ -3,72 +3,73 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Kushagra Agrawal</title>
-    <link rel="stylesheet" href="style.css?v=13Sept2026">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>About — Kushagra Agrawal</title>
+    <meta name="description" content="About Kushagra Agrawal: research interests in AI for social good, game theory, explainable AI and multi-agent systems.">
+    <meta name="author" content="Kushagra Agrawal">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About — Kushagra Agrawal">
+    <meta property="og:description" content="About Kushagra Agrawal: research interests in AI for social good, game theory, explainable AI and multi-agent systems.">
+    <meta property="og:image" content="https://kushagraistaken.github.io/Final-Design.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232563eb'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3EKA%3C/text%3E%3C/svg%3E">
+    <script>
+        (function () {
+            var d = document.documentElement, t = null;
+            d.className += ' no-js';
+            try { t = localStorage.getItem('theme'); } catch (e) { }
+            if (t === 'dark' || (!t && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches)) d.setAttribute('data-theme', 'dark');
+        })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=9Nov2026">
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header>
-        <nav class="navbar">
-            <div class="nav-left">
-                <a class="brand" href="index.html">Kushagra Agrawal</a>
-            </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="nav-links">
+        <nav class="navbar" aria-label="Main">
+            <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">KA</span><span>Kushagra Agrawal</span></a>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" style="color: var(--primary-color) !important;">About</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
                 <li><a href="publications.html">Publications</a></li>
-                <li class="nav-cta-mobile">
-                    <a class="btn-mobile" href="https://scholar.google.com/citations?user=hZgi4BgAAAAJ&hl=en"
-                        target="_blank" rel="noopener">
-                        <i class="fa-solid fa-chart-line"></i> Google Scholar Metrics
-                    </a>
+                <li class="nav-cta-mobile nav-divider">
+                    <a class="btn-mobile" href="https://scholar.google.com/citations?user=hZgi4BgAAAAJ&amp;hl=en" target="_blank" rel="noopener"><i class="fa-solid fa-chart-line"></i> Google Scholar</a>
                 </li>
-                <li class="nav-cta-mobile">
-                    <a class="btn-mobile" href="resume_kushagra.pdf" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
-                    </a>
+                <li class="nav-cta-mobile nav-cta-more">
+                    <a class="btn-mobile" href="resume_kushagra.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
                 </li>
-                <li class="nav-cta-mobile">
-                    <a class="btn-mobile" href="CV-13Sept.pdf" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-arrow-down"></i> Download CV
-                    </a>
+                <li class="nav-cta-mobile nav-cta-more">
+                    <a class="btn-mobile" href="CV-13Sept.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
                 </li>
-                <li class="nav-cta-mobile">
-                    <a class="btn-mobile" href="https://calendly.com/kush4409" target="_blank" rel="noopener">
-                        <i class="fa-regular fa-calendar"></i> Schedule Meeting
-                    </a>
+                <li class="nav-cta-mobile nav-cta-more">
+                    <a class="btn-mobile" href="https://calendly.com/kush4409" target="_blank" rel="noopener"><i class="fa-regular fa-calendar"></i> Schedule a Meeting</a>
                 </li>
             </ul>
             <div class="nav-cta">
-                <a class="btn btn-icon" href="https://scholar.google.com/citations?user=hZgi4BgAAAAJ&hl=en"
-                    target="_blank" rel="noopener" aria-label="Google Scholar">
+                <a class="btn btn-icon" href="https://scholar.google.com/citations?user=hZgi4BgAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
                     <i class="fa-solid fa-chart-line"></i>
-                    <span class="tooltip">View metrics on Google Scholar</span>
+                    <span class="tooltip">Google Scholar metrics</span>
                 </a>
-                <a class="btn btn-outline" href="resume_kushagra.pdf" target="_blank" rel="noopener"><i
-                        class="fa-solid fa-file-arrow-down"></i> <span class="btn-text">Download Resume</span></a>
-                <a class="btn btn-outline" href="CV-13Sept.pdf" target="_blank" rel="noopener"><i
-                        class="fa-solid fa-file-arrow-down"></i> <span class="btn-text">Download CV</span></a>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
-                <a class="btn" href="https://calendly.com/kush4409" target="_blank" rel="noopener"><i
-                        class="fa-regular fa-calendar"></i> <span class="btn-text">Schedule</span></a>
+                <a class="btn btn-outline" href="resume_kushagra.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+                <a class="btn btn-outline" href="CV-13Sept.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down"></i> CV</a>
+                <a class="btn" href="https://calendly.com/kush4409" target="_blank" rel="noopener"><i class="fa-regular fa-calendar"></i> <span>Schedule<span class="btn-text-long"> a meeting</span></span></a>
+                <div class="nav-tools">
+                    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+                    <button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-controls="nav-links"><i class="fa-solid fa-bars"></i></button>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="container animate-on-scroll" style="max-width: 760px; padding-top: 4rem;">
+    <main id="main">
+        <section class="container container-narrow page-intro animate-on-scroll">
 
             <!-- Story Header -->
             <div class="story-header">
@@ -100,23 +101,12 @@
                 <div class="about-story-section">
                     <h2>Technical Depth</h2>
                     <p>My toolkit spans the full spectrum of modern intelligence:</p>
-                    <ul
-                        style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem;">
-                        <li
-                            style="background: #eff6ff; color: #1d4ed8; padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
-                            Machine Learning</li>
-                        <li
-                            style="background: #f0fdf4; color: #15803d; padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
-                            NLP</li>
-                        <li
-                            style="background: #fdf2f8; color: #be185d; padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
-                            Game Theory</li>
-                        <li
-                            style="background: #fff7ed; color: #c2410c; padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
-                            Explainable AI</li>
-                        <li
-                            style="background: #f3f4f6; color: #374151; padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
-                            Multi-Agent Systems</li>
+                    <ul class="skill-chips">
+                        <li>Machine Learning</li>
+                        <li>NLP</li>
+                        <li>Game Theory</li>
+                        <li>Explainable AI</li>
+                        <li>Multi-Agent Systems</li>
                     </ul>
                 </div>
 
@@ -132,27 +122,35 @@
                         you are working on AI that matters, let's connect.</p>
                 </div>
 
-                <!-- LinkedIn Embed Placeholder -->
-                <div class="linkedin-embed">
-                    <i class="fa-brands fa-linkedin" style="font-size: 2rem; color: #0077b5; margin-bottom: 1rem;"></i>
-                    <p style="margin-bottom: 0.5rem; font-weight: 600;">Connect with me on LinkedIn</p>
-                    <a href="https://www.linkedin.com/in/kushagra-agrawal-51a3121ab/" target="_blank"
-                        class="btn btn-outline" style="margin-top: 1rem;">View Profile</a>
+                <div class="connect-card">
+                    <i class="fa-brands fa-linkedin connect-icon" aria-hidden="true"></i>
+                    <p>Let's connect</p>
+                    <div class="connect-actions">
+                        <a href="https://www.linkedin.com/in/kushagra-agrawal-51a3121ab/" target="_blank" rel="noopener" class="btn"><i class="fa-brands fa-linkedin"></i> LinkedIn profile</a>
+                        <a href="mailto:kush4409@gmail.com" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> kush4409@gmail.com</a>
+                    </div>
                 </div>
-
-                <p style="margin-top: 2rem; text-align: center;">
-                    <a href="mailto:kush4409@gmail.com"
-                        style="color: var(--primary-color); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--primary-color);">kush4409@gmail.com</a>
-                </p>
             </div>
 
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Kushagra Agrawal</p>
+        <div class="container footer-inner">
+            <div>
+                <p>&copy; <span data-year>2026</span> Kushagra Agrawal</p>
+                <p class="footer-meta">Last updated: 9 Nov 2026</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="arxiv-endorsement.html">arXiv Endorsement</a></li>
+                <li><a href="mailto:kush4409@gmail.com">Email</a></li>
+            </ul>
+        </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js?v=9Nov2026"></script>
 </body>
 
 </html>

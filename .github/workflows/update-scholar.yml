@@ -1,0 +1,50 @@
+name: Update Google Scholar metrics
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # every day at 03:17 UTC
+  workflow_dispatch:         # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+  actions: write   # needed to start the Pages deploy after committing
+
+concurrency:
+  group: update-scholar
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch metrics from Google Scholar
+        run: python3 tools/update_scholar.py
+
+      - name: Commit scholar.json if it changed
+        id: commit
+        run: |
+          if git diff --quiet -- scholar.json; then
+            echo "No changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add scholar.json
+          git commit -m "Update Google Scholar metrics"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made by this workflow don't trigger deploy.yml on their own,
+      # so start the Pages deploy explicitly.
+      - name: Redeploy site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
