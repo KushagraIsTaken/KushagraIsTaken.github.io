@@ -1,12 +1,12 @@
 {
   "source": "https://scholar.google.com/citations?user=hZgi4BgAAAAJ",
-  "updated": "2026-11-09T17:48:15Z",
-  "citations": 474,
+  "updated": "2026-11-10T10:34:09Z",
+  "citations": 477,
   "h_index": 9,
   "i10_index": 9,
   "recent": {
     "label": "Since 2021",
-    "citations": 473,
+    "citations": 476,
     "h_index": 9,
     "i10_index": 9
   },
@@ -21,18 +21,18 @@
     },
     {
       "year": 2026,
-      "citations": 312
+      "citations": 314
     }
   ],
   "papers": [
     {
       "title": "Artificial Intelligence in Personalized Nutrition and Food Manufacturing: A Comprehensive Review of Methods, Applications, and Future Directions",
-      "citations": 176,
+      "citations": 177,
       "year": 2025
     },
     {
       "title": "AI-Driven Transformation in Food Manufacturing: A Pathway to Sustainable Efficiency and Quality Assurance",
-      "citations": 134,
+      "citations": 135,
       "year": 2025
     },
     {
@@ -91,6 +91,11 @@
       "year": 2026
     },
     {
+      "title": "Novel agricultural techniques: an artificial intelligence and machine learning approach",
+      "citations": 2,
+      "year": 2026
+    },
+    {
       "title": "Computer Vision in Agriculture: Object Detection, Recognition, and Image Segmentation Techniques and Advanced Image Analysis",
       "citations": 2,
       "year": 2025
@@ -122,11 +127,6 @@
     },
     {
       "title": "AI-driven demand forecasting in industry 4.0: Techniques, applications, and future trends",
-      "citations": 1,
-      "year": 2026
-    },
-    {
-      "title": "Novel agricultural techniques: an artificial intelligence and machine learning approach",
       "citations": 1,
       "year": 2026
     },

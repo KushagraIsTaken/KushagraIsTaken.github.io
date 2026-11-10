@@ -5,14 +5,21 @@ to scholar.json, which the website reads to show live numbers.
 Runs daily from .github/workflows/update-scholar.yml; can also be run by hand:
     python3 tools/update_scholar.py
 
-Standard library only. If Scholar blocks the request or the page layout looks
-wrong, scholar.json is left untouched so the site keeps the last good numbers.
+Google Scholar usually blocks GitHub's servers (HTTP 403). So when the
+SERPAPI_KEY environment variable is set (a free key from https://serpapi.com,
+stored as a repository secret), the script falls back to SerpApi's Google
+Scholar Author API, which returns the same numbers.
+
+Standard library only. If every source fails, scholar.json is left untouched
+so the site keeps the last good numbers.
 """
 import html
 import json
+import os
 import re
 import sys
 import time
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -86,18 +93,12 @@ def parse_papers(page):
     return papers
 
 
-def main():
-    try:
-        first = fetch(0)
-    except Exception as e:  # network error, HTTP 429, captcha redirect, ...
-        warn(f"Could not reach Google Scholar ({e}); keeping previous scholar.json")
-        return 0
-
+def from_scholar():
+    """Scrape the public profile page directly. Returns (stats, history, papers)."""
+    first = fetch(0)
     stats = parse_stats(first)
     if not stats:
-        warn("Google Scholar page did not contain the metrics table (blocked or layout changed); keeping previous scholar.json")
-        return 0
-
+        raise RuntimeError("page did not contain the metrics table (blocked or layout changed)")
     papers = parse_papers(first)
     start = 100
     while len(papers) == start:  # profile has more than one page of papers
@@ -110,6 +111,64 @@ def main():
             break
         papers.extend(more)
         start += 100
+    return stats, parse_history(first), papers
+
+
+def from_serpapi(key):
+    """Same data via SerpApi's Google Scholar Author API (works from GitHub Actions)."""
+    def get(start):
+        q = urllib.parse.urlencode({"engine": "google_scholar_author", "author_id": SCHOLAR_ID,
+                                    "hl": "en", "num": 100, "start": start, "api_key": key})
+        with urllib.request.urlopen("https://serpapi.com/search.json?" + q, timeout=60) as r:
+            return json.load(r)
+
+    first = get(0)
+    if first.get("error"):
+        raise RuntimeError(first["error"])
+    stats, recent_label = {}, "Recent"
+    for row in first.get("cited_by", {}).get("table", []):
+        for name, vals in row.items():
+            since = next((k for k in vals if k.startswith("since_")), None)
+            if since:
+                recent_label = "Since " + since.split("_", 1)[1]
+            stats[name] = {"all": int(vals.get("all", 0)), "recent": int(vals.get(since, 0)) if since else 0}
+    if not {"citations", "h_index", "i10_index"} <= stats.keys():
+        raise RuntimeError("response did not contain the metrics table")
+    stats["recent_label"] = recent_label
+    history = [{"year": int(g["year"]), "citations": int(g.get("citations", 0))}
+               for g in first.get("cited_by", {}).get("graph", [])]
+
+    def articles(page):
+        return [{
+            "title": a.get("title", "").strip(),
+            "citations": int((a.get("cited_by") or {}).get("value") or 0),
+            "year": int(a["year"]) if str(a.get("year", "")).isdigit() else None,
+        } for a in page.get("articles", [])]
+
+    papers, page, start = articles(first), first, 100
+    while page.get("serpapi_pagination", {}).get("next") and start < 1000:
+        page = get(start)
+        if not page.get("articles"):
+            break
+        papers.extend(articles(page))
+        start += 100
+    return stats, history, papers
+
+
+def main():
+    try:
+        stats, history, papers = from_scholar()
+    except Exception as e:  # HTTP 403/429, captcha page, network error, ...
+        key = os.environ.get("SERPAPI_KEY", "").strip()
+        if not key:
+            warn(f"Could not read Google Scholar ({e}) and no SERPAPI_KEY secret is set; keeping previous scholar.json")
+            return 0
+        print(f"Google Scholar refused the request ({e}); using SerpApi instead.")
+        try:
+            stats, history, papers = from_serpapi(key)
+        except Exception as e2:
+            warn(f"SerpApi also failed ({e2}); keeping previous scholar.json")
+            return 0
 
     data = {
         "source": f"https://scholar.google.com/citations?user={SCHOLAR_ID}",
@@ -123,7 +182,7 @@ def main():
             "h_index": stats["h_index"]["recent"],
             "i10_index": stats["i10_index"]["recent"],
         },
-        "history": parse_history(first),
+        "history": history,
         "papers": sorted(papers, key=lambda p: -p["citations"]),
     }
 
