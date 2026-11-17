@@ -1,12 +1,12 @@
 {
   "source": "https://scholar.google.com/citations?user=hZgi4BgAAAAJ",
-  "updated": "2026-11-15T10:48:45Z",
-  "citations": 481,
+  "updated": "2026-11-17T11:47:07Z",
+  "citations": 482,
   "h_index": 9,
   "i10_index": 9,
   "recent": {
     "label": "Since 2021",
-    "citations": 480,
+    "citations": 481,
     "h_index": 9,
     "i10_index": 9
   },
@@ -21,7 +21,7 @@
     },
     {
       "year": 2026,
-      "citations": 318
+      "citations": 319
     }
   ],
   "papers": [
@@ -32,7 +32,7 @@
     },
     {
       "title": "AI-Driven Transformation in Food Manufacturing: A Pathway to Sustainable Efficiency and Quality Assurance",
-      "citations": 135,
+      "citations": 136,
       "year": 2025
     },
     {
@@ -186,7 +186,7 @@
       "year": 2023
     },
     {
-      "title": "Dynamic Linkage between Crude Oil Price, Energy Uncertainty and Gold Price Volatility in Five Leading Oil and Gold Consuming Nations: Insights from Ardl and Machine Learning …",
+      "title": "Dynamic Linkage between Crude Oil Price, Energy Uncertainty and Gold Price Volatility in Five Leading Oil and Gold Consuming Nations: Insights from Ardl and Machine Learning …",
       "citations": 0,
       "year": null
     }
