@@ -1,14 +1,14 @@
 {
   "source": "https://scholar.google.com/citations?user=hZgi4BgAAAAJ",
-  "updated": "2026-11-18T11:36:49Z",
-  "citations": 483,
-  "h_index": 9,
-  "i10_index": 9,
+  "updated": "2026-11-20T11:32:31Z",
+  "citations": 487,
+  "h_index": 10,
+  "i10_index": 10,
   "recent": {
     "label": "Since 2021",
-    "citations": 482,
-    "h_index": 9,
-    "i10_index": 9
+    "citations": 485,
+    "h_index": 10,
+    "i10_index": 10
   },
   "history": [
     {
@@ -21,13 +21,13 @@
     },
     {
       "year": 2026,
-      "citations": 320
+      "citations": 323
     }
   ],
   "papers": [
     {
       "title": "Artificial Intelligence in Personalized Nutrition and Food Manufacturing: A Comprehensive Review of Methods, Applications, and Future Directions",
-      "citations": 182,
+      "citations": 183,
       "year": 2025
     },
     {
@@ -72,7 +72,7 @@
     },
     {
       "title": "How Large Language Models Transform Urban Planning and Shape Tomorrow's Cities",
-      "citations": 9,
+      "citations": 10,
       "year": 2025
     },
     {
@@ -82,8 +82,13 @@
     },
     {
       "title": "From detection to decision: applied AI and ML techniques in food quality monitoring and process optimization",
-      "citations": 3,
+      "citations": 4,
       "year": 2026
+    },
+    {
+      "title": "Computer Vision in Agriculture: Object Detection, Recognition, and Image Segmentation Techniques and Advanced Image Analysis",
+      "citations": 3,
+      "year": 2025
     },
     {
       "title": "IndiSegNet: Real-time semantic segmentation for unstructured road scenes in intelligent transportation systems",
@@ -94,11 +99,6 @@
       "title": "Novel agricultural techniques: an artificial intelligence and machine learning approach",
       "citations": 2,
       "year": 2026
-    },
-    {
-      "title": "Computer Vision in Agriculture: Object Detection, Recognition, and Image Segmentation Techniques and Advanced Image Analysis",
-      "citations": 2,
-      "year": 2025
     },
     {
       "title": "Artificial Intelligence and Machine Learning in Agriculture: Novel Techniques, Implementation Strategies, and Application",
