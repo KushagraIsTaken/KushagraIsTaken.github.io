@@ -1,12 +1,12 @@
 {
   "source": "https://scholar.google.com/citations?user=hZgi4BgAAAAJ",
-  "updated": "2026-11-20T11:32:31Z",
-  "citations": 487,
+  "updated": "2026-11-22T11:17:09Z",
+  "citations": 490,
   "h_index": 10,
   "i10_index": 10,
   "recent": {
     "label": "Since 2021",
-    "citations": 485,
+    "citations": 488,
     "h_index": 10,
     "i10_index": 10
   },
@@ -21,13 +21,13 @@
     },
     {
       "year": 2026,
-      "citations": 323
+      "citations": 326
     }
   ],
   "papers": [
     {
       "title": "Artificial Intelligence in Personalized Nutrition and Food Manufacturing: A Comprehensive Review of Methods, Applications, and Future Directions",
-      "citations": 183,
+      "citations": 186,
       "year": 2025
     },
     {
