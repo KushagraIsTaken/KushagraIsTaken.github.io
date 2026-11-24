@@ -1,12 +1,12 @@
 {
   "source": "https://scholar.google.com/citations?user=hZgi4BgAAAAJ",
-  "updated": "2026-11-22T11:17:09Z",
-  "citations": 490,
+  "updated": "2026-11-24T13:38:57Z",
+  "citations": 493,
   "h_index": 10,
   "i10_index": 10,
   "recent": {
     "label": "Since 2021",
-    "citations": 488,
+    "citations": 492,
     "h_index": 10,
     "i10_index": 10
   },
@@ -21,18 +21,18 @@
     },
     {
       "year": 2026,
-      "citations": 326
+      "citations": 330
     }
   ],
   "papers": [
     {
       "title": "Artificial Intelligence in Personalized Nutrition and Food Manufacturing: A Comprehensive Review of Methods, Applications, and Future Directions",
-      "citations": 186,
+      "citations": 187,
       "year": 2025
     },
     {
       "title": "AI-Driven Transformation in Food Manufacturing: A Pathway to Sustainable Efficiency and Quality Assurance",
-      "citations": 136,
+      "citations": 137,
       "year": 2025
     },
     {
@@ -77,7 +77,7 @@
     },
     {
       "title": "Artificial intelligence in food and nutrition science: a paradigm-centric review of computational frameworks and system-level integration",
-      "citations": 5,
+      "citations": 6,
       "year": 2026
     },
     {
