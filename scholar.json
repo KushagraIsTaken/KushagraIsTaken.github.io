@@ -1,6 +1,6 @@
 {
   "source": "https://scholar.google.com/citations?user=hZgi4BgAAAAJ",
-  "updated": "2026-11-25T12:48:38Z",
+  "updated": "2026-11-27T12:11:14Z",
   "citations": 496,
   "h_index": 10,
   "i10_index": 10,
@@ -21,18 +21,18 @@
     },
     {
       "year": 2026,
-      "citations": 333
+      "citations": 334
     }
   ],
   "papers": [
     {
       "title": "Artificial Intelligence in Personalized Nutrition and Food Manufacturing: A Comprehensive Review of Methods, Applications, and Future Directions",
-      "citations": 188,
+      "citations": 187,
       "year": 2025
     },
     {
       "title": "AI-Driven Transformation in Food Manufacturing: A Pathway to Sustainable Efficiency and Quality Assurance",
-      "citations": 139,
+      "citations": 140,
       "year": 2025
     },
     {
@@ -186,7 +186,7 @@
       "year": 2023
     },
     {
-      "title": "Dynamic Linkage between Crude Oil Price, Energy Uncertainty and Gold Price Volatility in Five Leading Oil and Gold Consuming Nations: Insights from Ardl and Machine Learning …",
+      "title": "Dynamic Linkage between Crude Oil Price, Energy Uncertainty and Gold Price Volatility in Five Leading Oil and Gold Consuming Nations: Insights from Ardl and Machine Learning …",
       "citations": 0,
       "year": null
     }
